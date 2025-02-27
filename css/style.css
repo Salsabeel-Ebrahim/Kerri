@@ -1,0 +1,280 @@
+body{
+    font-family: "Nunito Sans", serif;
+}
+:root{
+    scroll-behavior: smooth;
+    scroll-padding: 20px;
+}
+/*            navbar     */
+.navbar{
+    box-shadow: 0px 0px 14px 0px #0000001b;
+}
+.navbar .nav-link.active {
+    color: #e65f78 !important;
+    font-weight: 700;
+}
+.navbar  {
+   padding-block: 4px !important;
+}
+/*             header section      */
+header{
+    background-image: url("../images/header-bg.jpg");
+background-size: cover;
+background-position: center;
+}
+header h1{
+    font-size: 70px;
+}
+header h1::after{ content: ''; animation: typing 5s infinite; 
+}
+
+@keyframes typing {
+    0%{
+        content: 'D|';
+    }
+    3%{
+        content: 'De|';
+    }
+    6%{
+        content: 'Des|';
+    }
+    9%{
+        content: 'Desi|';
+    }
+    12%{
+        content: 'Desig|';
+    }
+    15%{
+        content: 'Design|';
+    }
+    18%{
+        content: 'Designe|';
+    }
+    21%{
+        content: 'Designer|';
+    }
+    24%{
+        content: 'Designe|';
+    }
+    27%{
+        content: 'Design|';
+    }
+    30%{
+        content: 'Desig|';
+    }
+    33%{
+        content: 'Desi|';
+    }
+    36%{
+        content: 'Des|';
+    }
+    39%{
+        content: 'De|';
+    }
+    42%{
+        content: '|';
+    }
+    45%{
+        content: 'D|';
+    }
+    48%{
+        content: 'De|';
+    }
+    51%{
+        content: 'Dev|';
+    }
+    54%{
+        content: 'Deve|';
+    }
+    57%{
+        content: 'Devel|';
+    }
+    60%{
+        content: 'Develo|';
+    }
+    63%{
+        content: 'Develop|';
+    }
+    66%{
+        content: 'Develope|';
+    }
+    69%{
+        content: 'Develope|';
+    }
+    72%{
+        content: 'Developer|';
+    }
+    75%{
+        content: 'Develope|';
+    }
+    78%{
+        content: 'Develo|';
+    }
+    82%{
+        content: 'Devel|';
+    }
+    85%{
+        content: 'Deve|';
+    }
+    88%{
+        content: 'Deve|';
+    }
+    92%{
+        content: 'Dev|';
+    }
+    95%{
+        content: 'De|';
+    }
+    97%{
+        content: '|';
+    }
+    100%{
+        content: '|';
+    }
+    
+}
+header .header-p{
+   max-width: 500px;
+}
+header button:hover{
+background-color: white !important;
+color: black !important;
+}
+.seatings{
+    top: 30%;
+    background-color: #212529;
+    border-radius: 0 5px 5px 0 ;
+}
+
+header .dot{
+    width: 40px;
+    height: 70px;
+    bottom: 70px;
+    border: 2px solid white;
+    transform: translate(-50%);
+}
+@keyframes bounce {
+    0%, 100% {
+        top: 0;
+    }
+    
+    50% {
+        top: 85%;
+    }
+    
+}
+header .dot::after{
+    content: '';
+    width: 7px;
+    border-radius: 50%;
+    height: 7px;
+    bottom: 20px;
+    left: 50%;
+    position: absolute;
+    background-color: #fff;
+    transform: translate(-50%);
+    animation: bounce 1.5s infinite ease-in-out;
+}
+/*            About section      */
+.about h3 span {
+    color: #e65f78 !important;
+}
+.about .icons i{
+    width: 40px;
+    height: 40px;
+    
+    border:2px solid #ccc;
+}
+.about .icons i:hover{
+  color: #e65f78;
+    border-color:#e65f78;
+}
+/*           Client section                   */
+.client{
+    background-color: #f1f1f1;
+}
+.client p{
+ max-width: 500px;
+ 
+}
+.client img{
+width: 70px;
+height: 70px;
+}
+.client i{
+color: #e65f78;}
+
+.carousel-indicators button{
+    background-color: #e65f78 !important;
+    height: 7px !important;
+    width: 30px !important;
+    border-radius: 12px !important; 
+}
+.carousel-indicators{
+    bottom:-35px ;
+}
+/*          works section                   */
+.works p{
+    max-width: 500px;
+}
+.works .layer{ 
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0; 
+    transition: all 0.5s ;
+}
+.works .item:hover .layer{ 
+    opacity: 1;
+}
+.works .item img{
+    transition: all 0.5s ;
+}
+.works .item:hover img{ 
+    transform: scale(1.5) ;
+}
+.works .nav-link.active{
+    border-radius:25px !important;
+    color: #fff !important;
+    background-color: #e65f78 !important;
+    
+}
+.works .nav-link{
+
+    color: #444 !important;
+  
+    
+}
+/*        portfolio section                   */
+.portfolio{
+    background-color: #f1f1f1;
+}
+  p{
+    max-width: 500px;
+    color : rgb(33, 37, 41);
+}
+ p span{
+ 
+    color : #e65f78;
+}
+.portfolio  img:hover{
+ transform:scale(1.2) ;
+}
+.portfolio  img{
+     transition: all 0.4s; }
+/*     contact  section     */
+.contact i{
+    color: #e65f78;
+}
+.contact button{
+ border: none;
+background-color: #e65f78;
+
+
+}
+.contact textarea{
+min-height:  100px;
+}
+
+.form-control:focus {
+    border-color: #e65f78;
+    box-shadow: 0 0 0 .25rem #e65f785c;
+}
